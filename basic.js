@@ -11,4 +11,5 @@ async function f() {
 
 f()
 
-console.log(jservice.fetchRandomQuestion())
+
+
