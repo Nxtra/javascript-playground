@@ -1,2 +1,4 @@
 *.screenflow
 *.mp4
+package-lock.json
+.idea
