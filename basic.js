@@ -1,9 +1,14 @@
-var jservice = require("./jservice");
+const jservice = require("./jservice");
 
-jservice.getCategory(10044, function(category) {
-  console.log(category);
+jservice.getRandomQuestion(function (question) {
+    console.log('getRandomQuestion : ' + question)
 });
 
-jservice.getRandomQuestion(function(question) {
-  console.log(question);
-});
+async function f() {
+    let question = await jservice.fetchRandomQuestion()
+    console.log('fetchRandomQuestion : ' + question)
+}
+
+f()
+
+console.log(jservice.fetchRandomQuestion())
